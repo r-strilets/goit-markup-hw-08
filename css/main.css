@@ -65,29 +65,60 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 480px;
+  }
+}
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .header > .container {
   display: flex;
 }
+@media screen and (max-width: 480px) {
+  .header > .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header > .container {
+    width: 768px;
+  }
+}
 
 .logo__color {
   color: #2196f3;
 }
+@media screen and (max-width: 768px) {
+  .logo {
+    display: block;
+    padding: 16px 0 16px 0;
+  }
+}
 
-.menu,
 .nav__list,
 .contacts__list {
-  display: flex;
-  align-items: center;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav__list,
+.contacts__list {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav__list,
@@ -145,10 +176,6 @@ body {
 }
 
 .solutions {
-  background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/effective-solutions.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 1600px;
   text-align: center;
   margin: 0 auto;
   padding-top: 200px;
@@ -162,7 +189,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #fff;
-  width: 693px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -172,13 +198,22 @@ body {
   padding: 10px 32px;
 }
 
-.peculiarities__list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-widht: 768px) {
+  .peculiarities__list {
+    display: flex;
+    gap: 30px;
+  }
 }
 
-.peculiarities__item {
-  width: calc((100% - 90px) / 4);
+@media screen and (max-width: 768px) {
+  .peculiarities__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-widht: 1200px) {
+  .peculiarities__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .peculiarities__box {
@@ -208,7 +243,13 @@ body {
 }
 
 .works {
+  display: none;
   padding-top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .works {
+    display: block;
+  }
 }
 
 .works__title {

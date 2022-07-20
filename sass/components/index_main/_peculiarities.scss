@@ -1,16 +1,21 @@
-.peculiarities__title-visually-hidden{
-    @extend %visually-hidden;
+.peculiarities__title-visually-hidden {
+  @extend %visually-hidden;
 }
-.peculiarities__list{
+.peculiarities__list {
+  @media screen and(min-widht:768px) {
     display: flex;
     gap: 30px;
+  }
 }
 .peculiarities__item {
+  @media screen and(max-width:768px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-widht: 1200px) {
     width: calc((100% - 90px) / 4);
-
-    // &:not(:first-child) {
-    //     margin-left: 30px;
-    // }
+  }
 }
 .peculiarities__box {
   display: flex;

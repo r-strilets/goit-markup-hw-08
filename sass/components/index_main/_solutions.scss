@@ -1,9 +1,9 @@
 .solutions {
-  background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/effective-solutions.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 1600px;
+  // background: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //   url(../images/effective-solutions.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // max-width: 1600px;
 
   text-align: center;
 
@@ -21,13 +21,13 @@
 
   color: $white-color;
 
-  width: 693px;
+  // width: 693px;
 
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
-.solutions__btn{
-    padding: 10px 32px;
-    @extend %btn;
+.solutions__btn {
+  padding: 10px 32px;
+  @extend %btn;
 }

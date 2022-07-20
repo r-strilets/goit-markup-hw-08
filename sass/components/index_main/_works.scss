@@ -1,5 +1,9 @@
 .works {
+  display: none;
   padding-top: 0;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .works__title {
@@ -12,7 +16,7 @@
 
 .works__list {
   display: flex;
-  gap:30px;
+  gap: 30px;
 }
 
 .works__item {
