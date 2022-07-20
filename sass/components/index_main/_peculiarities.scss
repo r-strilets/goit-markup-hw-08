@@ -1,0 +1,42 @@
+.peculiarities__title-visually-hidden{
+    @extend %visually-hidden;
+}
+.peculiarities__list{
+    display: flex;
+    gap: 30px;
+}
+.peculiarities__item {
+    width: calc((100% - 90px) / 4);
+
+    // &:not(:first-child) {
+    //     margin-left: 30px;
+    // }
+}
+.peculiarities__box {
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f5f4fa;
+
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+}
+.peculiarities__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.peculiarities__subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.peculiarities__text {
+  line-height: 1.71;
+  color: $secondary-text-color;
+}

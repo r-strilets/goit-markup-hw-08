@@ -1,0 +1,36 @@
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin:0;
+  padding:0;
+}
+img{
+  display:block;
+}
+ul,
+a{
+  text-decoration:none;
+}
+ul{
+  list-style: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+  background-color: $background-main-color;
+}
+.container{
+  width:1200px;
+  padding:0 15px;
+  margin:0 auto;
+}
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
