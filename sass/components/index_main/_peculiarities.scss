@@ -2,18 +2,22 @@
   @extend %visually-hidden;
 }
 .peculiarities__list {
-  @media screen and(min-widht:768px) {
+  @media screen and(min-width:768px) {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
   }
 }
 .peculiarities__item {
-  @media screen and(max-width:768px) {
+  @media screen and(max-width:767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-widht: 1200px) {
+  @media screen and(min-width:768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
     width: calc((100% - 90px) / 4);
   }
 }
@@ -37,8 +41,13 @@
 .peculiarities__subtitle {
   font-size: 14px;
   text-transform: uppercase;
+  text-align: center;
 
   margin-bottom: 10px;
+
+  @media screen and (min-width: 767px) {
+    text-align: left;
+  }
 }
 
 .peculiarities__text {

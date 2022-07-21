@@ -23,6 +23,9 @@
 }
 .footer-address {
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 address {
   font-style: normal;
@@ -51,6 +54,7 @@ address {
 
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
+    text-align: left;
   }
 }
 .footer-social__title {
@@ -97,6 +101,7 @@ address {
 
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
+    text-align: left;
   }
 }
 .footer-subscribe__title {

@@ -8,6 +8,7 @@ ul {
 }
 img {
   display: block;
+  width: 100%;
 }
 ul,
 a {
@@ -30,6 +31,12 @@ body {
 
   @media screen and (max-width: 768px) {
     max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
   }
 }
 .section {

@@ -43,7 +43,7 @@
 .modal__btn-close {
   position: absolute;
   right: 8px;
-  top: 25px;
+  top: 8px;
 
   padding: 6px;
 
@@ -56,10 +56,6 @@
   &:focus {
     border-color: $accent-color;
     fill: $accent-color;
-  }
-
-  @media screen and (min-width: 768px) {
-    top: 8px;
   }
 }
 .form__title {
@@ -127,13 +123,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(14 / 12);
 
   color: $secondary-text-color;
 
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .label-checkbox__item-visually-hidden {
   @extend %visually-hidden;
@@ -156,7 +156,6 @@
 
 .label-checkbox__link {
   display: inline-block;
-  margin-left: 4px;
 
   color: $accent-color;
   text-decoration: underline;
