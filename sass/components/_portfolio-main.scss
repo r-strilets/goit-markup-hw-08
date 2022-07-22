@@ -1,19 +1,24 @@
-.portfolio {
-  border-top: 1px solid #ececec;
-}
 .potfolio__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
+  &-visually-hidden {
+    @extend %visually-hidden;
+  }
 }
 .filter__list {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 8px;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 15px;
 
   margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 .filter__button {
   font-family: 'Roboto', sans-serif;
@@ -48,10 +53,18 @@
 .examples__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 .examples__item {
   transition: box-shadow $time-function;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
 }
 .examples__item:hover,
 .examples__item:focus {

@@ -148,10 +148,12 @@
 
   margin-right: 8px;
 }
-.label-checkbox__item:checked + .label-checkbox__icon {
-  background-color: $accent-color;
-  background-image: url(../images/check.svg);
-  border-color: $accent-color;
+.label-checkbox__item {
+  &:checked + .label-checkbox__icon {
+    background-color: $accent-color;
+    background-image: url('../images/check.svg');
+    border-color: $accent-color;
+  }
 }
 
 .label-checkbox__link {

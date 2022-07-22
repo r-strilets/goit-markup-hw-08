@@ -13,6 +13,10 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 0;
   }
 }
 .footer__logo {
@@ -52,8 +56,11 @@ address {
 .footer-social {
   text-align: center;
 
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
   @media screen and (min-width: 1200px) {
-    margin-left: 70px;
+    margin-left: 85px;
     text-align: left;
   }
 }
@@ -118,6 +125,7 @@ address {
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
+    gap: 12px;
   }
 }
 .subscribe__input {
@@ -165,9 +173,9 @@ address {
   height: 50px;
   margin: 0 auto;
 
-  @media screen and (min-width: 1200px) {
-    margin-left: 12px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   margin-left: 12px;
+  // }
 }
 .subscribe__icon {
   margin-left: 10px;
