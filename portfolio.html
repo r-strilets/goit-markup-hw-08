@@ -59,10 +59,8 @@
         <button
           type="button"
           class="menu-mobile__open"
-          width="40"
-          height="40"
           data-mobile-menu-open
-          aria-expanded="кнопка мобильного меню"
+          aria-label="кнопка мобильного меню"
         >
           <svg class="menu-mobile__icon" width="40" height="40">
             <use href="./images/icons.svg#mobile-menu"></use>
@@ -100,12 +98,34 @@
                 class="portfolio__link"
               >
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio-example-item_1.jpg"
-                    alt="Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_1/portfolio-example-item_1-1200.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_1/portfolio-example-item_1-1200@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_1/portfolio-example-item_1-768.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_1/portfolio-example-item_1-768@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_1/portfolio-example-item_1.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_1/portfolio-example-item_1@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio-example-item/portfolio-example-item_1/portfolio-example-item_1.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
                   <p class="examples__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -126,12 +146,34 @@
                 class="portfolio__link"
               >
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio-example-item_2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_2/portfolio-example-item_2-1200.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_2/portfolio-example-item_2-1200@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_2/portfolio-example-item_2-768.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_2/portfolio-example-item_2-768@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_2/portfolio-example-item_2.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_2/portfolio-example-item_2@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio-example-item/portfolio-example-item_2/portfolio-example-item_2.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
                   <p class="examples__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -152,12 +194,34 @@
                 class="portfolio__link"
               >
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio-example-item_3.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_3/portfolio-example-item_3-1200.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_3/portfolio-example-item_3-1200@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_3/portfolio-example-item_3-768.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_3/portfolio-example-item_3-768@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_3/portfolio-example-item_3.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_3/portfolio-example-item_3@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio-example-item/portfolio-example-item_3/portfolio-example-item_3.jpg"
+                      alt="Ресторан Seafood"
+                    />
+                  </picture>
                   <p class="examples__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -178,12 +242,34 @@
                 class="portfolio__link"
               >
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio-example-item_4.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_4/portfolio-example-item_4-1200.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_4/portfolio-example-item_4-1200@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_4/portfolio-example-item_4-768.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_4/portfolio-example-item_4-768@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_4/portfolio-example-item_4.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_4/portfolio-example-item_4@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio-example-item/portfolio-example-item_4/portfolio-example-item_4.jpg"
+                      alt="Проект Prime"
+                    />
+                  </picture>
                   <p class="examples__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -204,12 +290,34 @@
                 class="portfolio__link"
               >
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio-example-item_5.jpg"
-                    alt="Проект Boxes"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_5/portfolio-example-item_5-1200.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_5/portfolio-example-item_5-1200@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_5/portfolio-example-item_5-768.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_5/portfolio-example-item_5-768@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_5/portfolio-example-item_5.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_5/portfolio-example-item_5@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio-example-item/portfolio-example-item_5/portfolio-example-item_5.jpg"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
                   <p class="examples__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -230,12 +338,34 @@
                 class="portfolio__link"
               >
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio-example-item_6.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_6/portfolio-example-item_6-1200.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_6/portfolio-example-item_6-1200@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_6/portfolio-example-item_6-768.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_6/portfolio-example-item_6-768@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_6/portfolio-example-item_6.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_6/portfolio-example-item_6@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio-example-item/portfolio-example-item_6/portfolio-example-item_6.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
                   <p class="examples__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -256,12 +386,34 @@
                 class="portfolio__link"
               >
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio-example-item_7.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_7/portfolio-example-item_7-1200.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_7/portfolio-example-item_7-1200@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_7/portfolio-example-item_7-768.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_7/portfolio-example-item_7-768@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_7/portfolio-example-item_7.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_7/portfolio-example-item_7@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio-example-item/portfolio-example-item_7/portfolio-example-item_7.jpg"
+                      alt="Издание Limited Edition"
+                    />
+                  </picture>
                   <p class="examples__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -282,12 +434,34 @@
                 class="portfolio__link"
               >
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio-example-item_8.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_8/portfolio-example-item_8-1200.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_8/portfolio-example-item_8-1200@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_8/portfolio-example-item_8-768.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_8/portfolio-example-item_8-768@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_8/portfolio-example-item_8.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_8/portfolio-example-item_8@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio-example-item/portfolio-example-item_8/portfolio-example-item_8.jpg"
+                      alt="Проект LAB"
+                    />
+                  </picture>
                   <p class="examples__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -308,12 +482,35 @@
                 class="portfolio__link"
               >
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio-example-item_9.jpg"
-                    alt="Growing Business"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_9/portfolio-example-item_9-1200.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_9/portfolio-example-item_9-1200@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_9/portfolio-example-item_9-768.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_9/portfolio-example-item_9-768@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-example-item/portfolio-example-item_9/portfolio-example-item_9.jpg    1x,
+                        ./images/portfolio-example-item/portfolio-example-item_9/portfolio-example-item_9@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="examples__img"
+                      src="./images/portfolio-example-item/portfolio-example-item_9/portfolio-example-item_9.jpg"
+                      alt="Growing Business"
+                      width="370"
+                    />
+                  </picture>
                   <p class="examples__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
