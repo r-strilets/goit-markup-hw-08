@@ -7,9 +7,10 @@
 }
 .menu-mobile {
   position: fixed;
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 796px;
+  height: 100%;
 
   top: 0;
   right: 0;
@@ -98,6 +99,7 @@
 }
 .mobile-social__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
