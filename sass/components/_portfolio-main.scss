@@ -61,6 +61,7 @@
   }
 }
 .examples__item {
+  display: flex;
   transition: box-shadow $time-function;
 
   @media screen and (min-width: 768px) {
@@ -82,6 +83,11 @@
 .examples__item:focus .examples__descr {
   transform: translateY(0);
   transition: transform $time-function;
+}
+
+.portfolio__link {
+  display: flex;
+  flex-direction: column;
 }
 
 .examples__thumb {
@@ -109,7 +115,8 @@
   transition: transform $time-function;
 }
 .examples__footer {
-  padding: 20px 24px;
+  flex-grow: 1;
+
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
