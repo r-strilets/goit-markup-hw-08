@@ -117,14 +117,10 @@
 .examples__footer {
   flex-grow: 1;
 
+  padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-}
-.examples__item:first-child .examples__footer {
-  @media screen and(min-width:768px) and (max-width: 1199px) {
-    padding: 20px 24px 56px 24px;
-  }
 }
 .examples__title {
   font-size: 18px;

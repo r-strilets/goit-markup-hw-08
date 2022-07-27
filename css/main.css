@@ -1196,15 +1196,10 @@ address {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .examples__item:first-child .examples__footer {
-    padding: 20px 24px 56px 24px;
-  }
 }
 
 .examples__title {
